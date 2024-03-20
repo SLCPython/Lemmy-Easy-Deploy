@@ -18,9 +18,9 @@
   database: {
     user: "lemmy"
     password: "{{POSTGRES_PASSWORD}}"
-    host: "postgres"
-    port: 5432
-    database: "lemmy"
+    host: "{{ POSTGRES_HOST }}"
+    port: {{ POSTGRES_PORT }}
+    database: "{{ POSTGRES_DB_NAME }}"
     pool_size: {{POSTGRES_POOL_SIZE}}
   }
 
